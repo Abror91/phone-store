@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonix.Web", "Phonix.Web\Phonix.Web.csproj", "{7BE6D5B9-0A05-400C-8F55-A54F8695A8CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonix.DAL", "Phonix.DAL\Phonix.DAL.csproj", "{5C495D17-22FA-4CA7-B921-F69EA581B68C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonix.BLL", "Phonix.BLL\Phonix.BLL.csproj", "{F4782BFE-486F-409C-9DE3-F0581B97DABB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BE6D5B9-0A05-400C-8F55-A54F8695A8CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BE6D5B9-0A05-400C-8F55-A54F8695A8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BE6D5B9-0A05-400C-8F55-A54F8695A8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BE6D5B9-0A05-400C-8F55-A54F8695A8CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C495D17-22FA-4CA7-B921-F69EA581B68C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C495D17-22FA-4CA7-B921-F69EA581B68C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C495D17-22FA-4CA7-B921-F69EA581B68C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C495D17-22FA-4CA7-B921-F69EA581B68C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4782BFE-486F-409C-9DE3-F0581B97DABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4782BFE-486F-409C-9DE3-F0581B97DABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4782BFE-486F-409C-9DE3-F0581B97DABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4782BFE-486F-409C-9DE3-F0581B97DABB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C59427FF-62E3-4815-B0AC-5A8F6B03FF59}
+	EndGlobalSection
+EndGlobal

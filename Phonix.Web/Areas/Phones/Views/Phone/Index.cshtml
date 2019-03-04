@@ -1,0 +1,67 @@
+﻿@{ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+    <button type="button" class="btn btn-primary" data-target="#phoneModal" data-toggle="modal">Add Phone</button>
+<br />
+<br />
+<p id="message"></p>
+<div class="container">
+    <table class="table table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Model</th>
+                <th>Company Name</th>
+                <th>Release Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tblBody">
+
+        </tbody>
+    </table>
+</div>
+
+<div class="modal fade" tabindex="-1" id="phoneModal" role="dialog" aria-hidden="true" aria-labelledby="phoneModalTitle">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" id="phoneModalTitle">Add Phone</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="control-label" for="phoneId">ID</label>
+                    <input type="text" id="phoneId" placeholder="Phone Id"  class="form-control" disabled="disabled" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="phoneModel">Phone Model</label>
+                    <input type="text" id="phoneModel" placeholder="Phone Model" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="companyName">Company Name</label>
+                    <input type="text" id="companyName" placeholder="Company Name"  class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="releaseDate">Release Date</label>
+                    <input type="datetime" id="releaseDate" placeholder="Release Date"  class="form-control datepicker" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="imagePath">Upload Image</label>
+                <input type="file" id="imagePath" class="form-control" />
+            </div>
+            <div class="modal-footer">
+                <button id="btnAdd" type="button" class="btn btn-primary" onclick="addPhone();">Add</button>
+                <button id="btnEdit" type="button" class="btn btn-success" onclick="editPhone();" style="display:none;">Edit</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+<script src="~/Scripts/phone.js"></script>
+    }
