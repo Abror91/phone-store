@@ -69,9 +69,10 @@ function addPhone() {
         contentType: 'application/json;charset=utf-8',
         dataType: 'json',
         success: function (result) {
+            $('#message').empty();
+            clearBoxes();
             $('#message').append(result);
             loadData();
-            clearBoxes();
             $('#phoneModal').modal('hide');
         },
         error: function (error) {
@@ -97,9 +98,10 @@ function editPhone() {
         contentType: 'application/json;charset=utf-8',
         dataType: 'json',
         success: function (result) {
+            $('#message').empty();
+            clearBoxes();
             $('#message').append(result);
             loadData();
-            clearBoxes();
             $('#phoneModal').modal('hide');
         },
         error: function (error) {
@@ -117,6 +119,8 @@ function deletePhone(phoneId) {
             contentType: 'application/json; charset=utf-8;',
             dataType: 'json',
             success: function (result) {
+                $('#message').empty();
+                $('#message').empty();
                 $('#message').append(result);
                 loadData();
             },

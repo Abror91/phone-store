@@ -48,14 +48,11 @@ namespace Phonix.BLL.Services
                 return new OperationDetails(false, "Error. Phone company name cannot be empty!", "");
             if (string.IsNullOrEmpty(phone.ReleaseDate.ToShortDateString()))
                 return new OperationDetails(false, "Error. Phone release date cannot be empty!", "");
-            if (string.IsNullOrEmpty(phone.CoverImagePath))
-                return new OperationDetails(false, "Error. Phone image cannot be empty!", "");
             var p = new Phone
             {
                 Model = phone.Model,
                 CompanyName = phone.CompanyName,
-                ReleaseDate = phone.ReleaseDate,
-                CoverImagePath = phone.CoverImagePath
+                ReleaseDate = phone.ReleaseDate
             };
             await _db.Phones.Add(p);
             return new OperationDetails(true, "Successfully created!", "");

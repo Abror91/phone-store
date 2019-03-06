@@ -235,6 +235,23 @@ namespace Phonix.BLL.Services
             }
             return new OperationDetails(false, "The user with the given login already exists!", "");
         }
+
+        public async Task SeedAdminData()
+        {
+            var result = await _db.UserManager.Users.AnyAsync();
+            if (!result)
+            {
+                var admin = new ApplicationUser
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Email = "abror@abror.com",
+                    UserName = "abror@abror.com",
+                    EmailConfirmed = true
+                };
+                await _db.UserManager.CreateAsync(admin, "Abror?15");
+                await _db.UserManager.AddToRoleAsync(admin.Id, "Admin"); 
+            }
+        }
         
         public void Dispose()
         {

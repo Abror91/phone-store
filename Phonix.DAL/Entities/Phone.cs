@@ -12,7 +12,6 @@ namespace Phonix.DAL.Entities
         public string Model { get; set; }
         public string CompanyName { get; set; }
         public DateTime ReleaseDate { get; set; }
-        public string CoverImagePath { get; set; }
         public virtual ICollection<Order> Orders { get; set; }
     }
 }

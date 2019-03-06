@@ -16,5 +16,6 @@ namespace Phonix.BLL.Interfaces
         Task<OperationDetails> CreateRole(RoleDTO role);
         Task<OperationDetails> EditRole(RoleDTO role);
         Task<OperationDetails> DeleteRole(string roleId);
+        Task SeedRolesData();
     }
 }

@@ -74,6 +74,10 @@
     <Compile Include="Migrations\201903030338495_ImagePathAdded.Designer.cs">
       <DependentUpon>201903030338495_ImagePathAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903050736285_Phone-property-deleted.cs" />
+    <Compile Include="Migrations\201903050736285_Phone-property-deleted.Designer.cs">
+      <DependentUpon>201903050736285_Phone-property-deleted.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ApplicationRoleManager.cs" />
@@ -95,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903030338495_ImagePathAdded.resx">
       <DependentUpon>201903030338495_ImagePathAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903050736285_Phone-property-deleted.resx">
+      <DependentUpon>201903050736285_Phone-property-deleted.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

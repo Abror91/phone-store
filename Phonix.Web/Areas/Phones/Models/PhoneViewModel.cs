@@ -10,7 +10,6 @@ namespace Phonix.Web.Areas.Phones.Models
         public int Id { get; set; }
         public string Model { get; set; }
         public string CompanyName { get; set; }
-        public DateTime ReleaseDate { get; set; }
-        public string ImagePath { get; set; }
+        public string ReleaseDate { get; set; }
     }
 }

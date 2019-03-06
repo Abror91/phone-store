@@ -111,6 +111,16 @@ namespace Phonix.BLL.Services
             return new OperationDetails(true, "Success. Role was successfully deleted!", "");
         }
 
+        public async Task SeedRolesData()
+        {
+            var result = _db.RoleManager.Roles.Any();
+            if (!result)
+            {
+                await _db.RoleManager.CreateAsync(new ApplicationRole { Name = "Admin" });
+                await _db.RoleManager.CreateAsync(new ApplicationRole { Name = "User" });
+            }
+        }
+
         public void Dispose()
         {
             _db.Dispose();

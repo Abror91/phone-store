@@ -2,6 +2,7 @@
 using Phonix.BLL.DTO;
 using Phonix.BLL.Interfaces;
 using Phonix.Web.Areas.Admin.Models;
+using Phonix.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ using System.Web.Mvc;
 
 namespace Phonix.Web.Areas.Admin.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = RolesList.Admin)]
     public class RolesController : Controller
     {
         private readonly IRoleService _roles;

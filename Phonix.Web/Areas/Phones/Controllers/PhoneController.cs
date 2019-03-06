@@ -38,7 +38,7 @@ namespace Phonix.Web.Areas.Phones.Controllers
                     Id = p.Id,
                     Model = p.Model,
                     CompanyName = p.CompanyName,
-                    ReleaseDate = p.ReleaseDate
+                    ReleaseDate = p.ReleaseDate.ToShortDateString()
                 };
                 phonesToReturn.Add(phone);
             }
@@ -53,7 +53,7 @@ namespace Phonix.Web.Areas.Phones.Controllers
                 Id = phone.Id,
                 Model = phone.Model,
                 CompanyName = phone.CompanyName,
-                ReleaseDate = phone.ReleaseDate
+                ReleaseDate = phone.ReleaseDate.ToShortDateString()
             };
             return Json(p, JsonRequestBehavior.AllowGet);
         }
@@ -61,23 +61,20 @@ namespace Phonix.Web.Areas.Phones.Controllers
 
         public async Task<JsonResult> AddPhone(PhoneViewModel phone)
         {
-            if (Request.Files != null && Request.Files.Count > 0 && Request.Files[0].ContentLength > 0)
+            if (ModelState.IsValid)
             {
-                var fileName = Path.GetFileName(Request.Files[0].FileName);
-                var filePathOfWebsite = "~/Images/Phones/" + fileName;
-                Request.Files[0].SaveAs(Server.MapPath(filePathOfWebsite));
                 var p = new PhoneDTO
                 {
                     Model = phone.Model,
                     CompanyName = phone.CompanyName,
-                    ReleaseDate = Convert.ToDateTime(phone.ReleaseDate),
-                    CoverImagePath = filePathOfWebsite
+                    ReleaseDate = Convert.ToDateTime(phone.ReleaseDate)
                 };
                 var result = await _phones.Add(p);
                 if (result.Succeeded)
                 {
                     return Json(result.Message, JsonRequestBehavior.AllowGet);
                 }
+                ModelState.AddModelError(result.Property, result.Message);
             }
             return Json("Error", JsonRequestBehavior.AllowGet);
         }

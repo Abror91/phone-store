@@ -11,7 +11,6 @@ namespace Phonix.BLL.DTO
         public int Id { get; set; }
         public string Model { get; set; }
         public string CompanyName { get; set; }
-        public string CoverImagePath { get; set; }
         public DateTime ReleaseDate { get; set; }
     }
 }

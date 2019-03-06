@@ -21,5 +21,6 @@ namespace Phonix.BLL.Interfaces
         Task<OperationDetails> DeleteUser(string id);
         Task<ClaimsIdentity> Authenticate(UserLoginDTO loginUser);
         Task<OperationDetails> RegisterUser(UserDTO user);
+        Task SeedAdminData();
     }
 }

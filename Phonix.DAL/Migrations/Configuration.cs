@@ -23,7 +23,6 @@ namespace Phonix.DAL.Migrations
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
             //AddData(context);
-            InditializeAdminData();
         }
 
         private void AddData(ApplicationDbContext db)
@@ -62,44 +61,27 @@ namespace Phonix.DAL.Migrations
 
         }
 
-        private async Task InditializeAdminData()
+        private async Task InditializeAdminAndRolesData(ApplicationDbContext db)
         {
-            var _db = new UnitOfWork();
-            var userManager = _db.UserManager;
-            var roleManager = _db.RoleManager;
-            const string name = "abror@abror.com";
-            const string password = "Abror?15";
-            const string adminRole = "Admin";
-            const string userRole = "User";
+            var roleManager = new ApplicationRoleManager(new RoleStore<ApplicationRole>(db));
+            if (!roleManager.Roles.Any())
+            {
+                await roleManager.CreateAsync(new ApplicationRole { Name = "Admin" });
+                await roleManager.CreateAsync(new ApplicationRole { Name = "User" });
 
-            var role = await roleManager.FindByNameAsync(adminRole);
-            if(role == null)
-            {
-                role = new ApplicationRole { Name = adminRole };
-                var result = await roleManager.CreateAsync(role);
             }
-            var role2 = await roleManager.FindByNameAsync(userRole);
-            if(role2 == null)
+            var userManager = new ApplicationUserManager(new UserStore<ApplicationUser>(db));
+            if (!userManager.Users.Any())
             {
-                role2 = new ApplicationRole { Name = userRole };
-                var result = await roleManager.CreateAsync(role2);
-            }
-            var user = await userManager.FindByNameAsync(name);
-            if(user == null)
-            {
-                user = new ApplicationUser { UserName = name, Email = name };
-                var result = await userManager.CreateAsync(user, password);
-                result = await userManager.SetLockoutEnabledAsync(user.Id, false);
-            }
-            // Add user admin to Role Admin if not already added
-            var rolesForUser = await userManager.GetRolesAsync(user.Id);
-            if (!rolesForUser.Contains(role.Name))
-            {
-                var result = userManager.AddToRolesAsync(user.Id, role.Name);
-            }
-            if (!rolesForUser.Contains(role2.Name))
-            {
-                var result = userManager.AddToRolesAsync(user.Id, role2.Name);
+                var admin = new ApplicationUser
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Email = "abror@abror.com",
+                    UserName = "abror@abror.com",
+                    EmailConfirmed = true
+                };
+                await userManager.CreateAsync(admin, "Abror?15");
+                await userManager.AddToRolesAsync(admin.Id, new string[] { "Admin", "User" });
             }
         }
     }

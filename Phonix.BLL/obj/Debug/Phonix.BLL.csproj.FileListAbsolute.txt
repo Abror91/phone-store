@@ -42,3 +42,47 @@ C:\Users\Администратор\source\repos\Phonix\Phonix.BLL\bin\Debug\Sys
 C:\Users\Администратор\source\repos\Phonix\Phonix.BLL\bin\Debug\System.Web.WebPages.xml
 C:\Users\Администратор\source\repos\Phonix\Phonix.BLL\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Администратор\source\repos\Phonix\Phonix.BLL\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Phonix.BLL.dll.config
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Phonix.BLL.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Phonix.BLL.pdb
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\AutoMapper.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\EntityFramework.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Ninject.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Ninject.Web.Common.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Ninject.Web.Common.WebHost.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Ninject.Web.Mvc.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Phonix.DAL.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\System.ValueTuple.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\System.Web.Helpers.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\System.Web.Mvc.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\System.Web.Razor.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\System.Web.WebPages.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Phonix.DAL.pdb
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Phonix.DAL.dll.config
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\AutoMapper.pdb
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\AutoMapper.xml
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\EntityFramework.xml
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Ninject.xml
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Ninject.Web.Common.xml
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Ninject.Web.Common.WebHost.xml
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\Ninject.Web.Mvc.xml
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\System.ValueTuple.xml
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\System.Web.Helpers.xml
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\System.Web.Mvc.xml
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\System.Web.Razor.xml
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\System.Web.WebPages.xml
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\obj\Debug\Phonix.BLL.csprojResolveAssemblyReference.cache
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\obj\Debug\Phonix.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\obj\Debug\Phonix.BLL.dll
+C:\Users\Администратор\Desktop\github app\Phonix\phone-store\Phonix.BLL\obj\Debug\Phonix.BLL.pdb
